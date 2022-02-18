@@ -24,7 +24,7 @@
 //  )
  
 
-
+button.addEventListener('ask',get_answers_image)
 
  function get_answers_image(){
 
@@ -58,5 +58,8 @@
       document.getElementById('answers')
      .src=`./image/${selected_image}`  
 
-    const nextQuestion = prompt ("Next question please")
+    function clearAnswer(){
+        document.getElementById('answer').remove();
+
+    }
   } 
